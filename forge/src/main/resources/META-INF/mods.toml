@@ -1,0 +1,40 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="MIT"
+issueTrackerURL="https://github.com/RedstoneWizard08/Equivalence-Reborn/issues"
+
+[[mods]]
+modId="singularity"
+version="${version}"
+displayName="Singularity"
+#updateJSONURL="http://myurl.me/"
+#displayURL="http://example.com/"
+logoFile="icon.png"
+#credits="Thanks for this example mod goes to Java"
+authors="RedstoneWizard08, Bogdanasaurus"
+#displayTest="MATCH_VERSION"
+
+description='''
+
+'''
+
+[[dependencies.singularity]]
+   modId="forge"
+   mandatory=true
+   versionRange="[43,)"
+   ordering="NONE"
+   side="BOTH"
+
+[[dependencies.singularity]]
+   modId="minecraft"
+   mandatory=true
+   versionRange="[1.19.2,1.20)"
+   ordering="NONE"
+   side="BOTH"
+
+[[dependencies.singularity]]
+   modId="cloth_config"
+   mandatory=true
+   versionRange="[8.2,)"
+   ordering="NONE"
+   side="BOTH"

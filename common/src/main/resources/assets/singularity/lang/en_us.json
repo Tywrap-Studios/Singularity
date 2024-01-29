@@ -1,0 +1,17 @@
+{
+    "text.autoconfig.singularity.title": "Singularity Config",
+
+    "text.autoconfig.singularity.option.generalOptions": "General",
+    "text.autoconfig.singularity.option.generalOptions.singularityRadius": "Singularity Radius",
+
+    "text.autoconfig.singularity.option.clearOptions": "Item Clearing",
+    "text.autoconfig.singularity.option.clearOptions.enableClearing": "Enable",
+    "text.autoconfig.singularity.option.clearOptions.showCleared": "Publicly display the amount of cleared items",
+    "text.autoconfig.singularity.option.clearOptions.clearInterval": "Time in seconds between clears",
+
+    "singularity.chat.clearingItems.30": "§a[Singularity]§r Clearing ground items in 30 seconds...",
+    "singularity.chat.clearingItems.10": "§a[Singularity]§r Clearing ground items in 10 seconds...",
+    "singularity.chat.clearingItems": "§a[Singularity]§r Clearing ground items...",
+    "singularity.chat.clearingItems.done": "§a[Singularity]§r Ground items cleared!",
+    "singularity.chat.clearingItems.count": "§a[Singularity]§r Cleared %s items."
+}

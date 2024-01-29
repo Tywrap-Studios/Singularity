@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "singularity",
+  "version": "${version}",
+
+  "name": "Singularity",
+  "description": "",
+  "authors": ["RedstoneWizard08", "Bogdanasaurus"],
+  "contact": {},
+
+  "license": "MIT",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [ "redstonedev.singularity.fabric.SingularityFabric" ],
+    "modmenu": [ "redstonedev.singularity.fabric.ModMenuIntegration" ]
+  },
+  "mixins": [
+    "singularity.mixins.json",
+    "singularity-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.6",
+    "minecraft": ">=1.19.2",
+    "cloth-config": ">=8.3.115"
+  }
+}
