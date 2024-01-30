@@ -10,6 +10,7 @@
     "text.autoconfig.singularity.option.clearOptions.enableClearing": "Enable",
     "text.autoconfig.singularity.option.clearOptions.showCleared": "Publicly display the amount of cleared items",
     "text.autoconfig.singularity.option.clearOptions.clearInterval": "Time in seconds between clears",
+    "text.autoconfig.singularity.option.clearOptions.minimumItems": "Minimum items to clear",
 
     "singularity.chat.clearingItems.30": "§a[Singularity]§r Clearing ground items in 30 seconds...",
     "singularity.chat.clearingItems.10": "§a[Singularity]§r Clearing ground items in 10 seconds...",

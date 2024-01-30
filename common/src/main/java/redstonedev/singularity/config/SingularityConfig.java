@@ -33,5 +33,8 @@ public class SingularityConfig implements ConfigData {
 
         // The interval in which singularities should be cleared, in seconds
         public int clearInterval = 600;
+
+        // The minimum number of items to clear.
+        public int minimumItems = 1000;
     }
 }
