@@ -3,6 +3,8 @@
 
     "text.autoconfig.singularity.option.generalOptions": "General",
     "text.autoconfig.singularity.option.generalOptions.singularityRadius": "Singularity Radius",
+    "text.autoconfig.singularity.option.generalOptions.minimumSize": "Minimum Singularity Size",
+    "text.autoconfig.singularity.option.generalOptions.displayPotentialsPublicly": "Publicly display potential singularities",
 
     "text.autoconfig.singularity.option.clearOptions": "Item Clearing",
     "text.autoconfig.singularity.option.clearOptions.enableClearing": "Enable",
@@ -13,5 +15,7 @@
     "singularity.chat.clearingItems.10": "§a[Singularity]§r Clearing ground items in 10 seconds...",
     "singularity.chat.clearingItems": "§a[Singularity]§r Clearing ground items...",
     "singularity.chat.clearingItems.done": "§a[Singularity]§r Ground items cleared!",
-    "singularity.chat.clearingItems.count": "§a[Singularity]§r Cleared %s items."
+    "singularity.chat.clearingItems.count": "§a[Singularity]§r Cleared %s items.",
+
+    "singularity.chat.detection.find": "§a[Singularity]§r Found potential singularity at §b(%s§b, %s§b, %s§b)§r"
 }

@@ -15,7 +15,13 @@ public class SingularityConfig implements ConfigData {
 
     public static class GeneralOptions {
         // Radius for a singularity, in blocks
-        public double singularityRadius = 5.0;
+        public double singularityRadius = 3.0;
+
+        // Minimum number of items for a singularity
+        public int minimumSize = 2000;
+
+        // Display the detection message for everyone
+        public boolean displayPotentialsPublicly = false;
     }
 
     public static class ClearOptions {
