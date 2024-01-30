@@ -5,7 +5,7 @@ A small mod to find item singularities.
 ## Features
 
 - [x] Automatic scheduled item removal
-- [ ] Farm leak detection
+- [x] Farm leak detection
 - [x] Fully configurable
 - [x] Warns before clearing items
 - [x] Easy to set up
@@ -32,5 +32,5 @@ to find these and fix them.
 ## Roadmap
 
 - [x] Implement item removal timer
-- [ ] Implement singularity detection
+- [x] Implement singularity detection
 - [ ] MORE CONFIGURATION!!
