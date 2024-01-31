@@ -33,4 +33,4 @@ to find these and fix them.
 
 - [x] Implement item removal timer
 - [x] Implement singularity detection
-- [ ] MORE CONFIGURATION!!
+- [x] MORE CONFIGURATION!!

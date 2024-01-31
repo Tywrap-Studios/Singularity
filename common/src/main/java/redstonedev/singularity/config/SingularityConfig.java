@@ -22,6 +22,9 @@ public class SingularityConfig implements ConfigData {
 
         // Display the detection message for everyone
         public boolean displayPotentialsPublicly = false;
+
+        // Whether to automatically delete previous dumps when creating a new one
+        public boolean deleteOldDumps = false;
     }
 
     public static class ClearOptions {
