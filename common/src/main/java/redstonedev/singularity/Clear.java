@@ -23,8 +23,6 @@ public class Clear {
                     for (int i = 0; i < ((ItemEntity) entity).getItem().getCount(); i++) {
                         positions.add(GlobalPos.of(entity.getLevel().dimension(), entity.blockPosition()));
                     }
-
-                    entity.kill();
                 }
             }
         }
