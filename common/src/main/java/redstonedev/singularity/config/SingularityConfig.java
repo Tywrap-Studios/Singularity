@@ -25,6 +25,9 @@ public class SingularityConfig implements ConfigData {
 
         // Whether to automatically delete previous dumps when creating a new one
         public boolean deleteOldDumps = false;
+
+        // Whether to display debug spawns publicly
+        public boolean displayDebugSpawns = true;
     }
 
     public static class ClearOptions {

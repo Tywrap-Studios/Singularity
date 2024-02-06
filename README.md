@@ -39,3 +39,20 @@ to find these and fix them.
 
 Dependencies for this mod include [Cloth Config](https://modrinth.com/mod/cloth-config)
 and [Architectury API](https://modrinth.com/mod/architectury-api).
+
+## Debugging
+
+There is a new command! `/singularity debug`
+
+It takes 4 arguments:
+
+- Level: The ResourceLocation of the dimension to spawn items in
+- Position: Where to spawn the items (x, y, z) in that dimension
+- Item ID: The item's ID (ResourceLocation)
+- Count: How many items to spawn (min: 0, max: Infinity)
+
+Example:
+
+```txt
+/singularity debug minecraft:overworld 0 100 0 minecraft:stick 8000
+```
