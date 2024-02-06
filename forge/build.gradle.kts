@@ -30,10 +30,10 @@ configurations {
 }
 
 dependencies {
-    forge("net.minecraftforge:forge:${rootProject.forge_version}")
+    forge("net.minecraftforge:forge:${rootProject.property("forge_version")}")
 
-    modApi("dev.architectury:architectury-forge:${rootProject.architectury_version}")
-    modApi("me.shedaniel.cloth:cloth-config-forge:${rootProject.cloth_version}")
+    modApi("dev.architectury:architectury-forge:${rootProject.property("architectury_version")}")
+    modApi("me.shedaniel.cloth:cloth-config-forge:${rootProject.property("cloth_version")}")
 
     common(project(":common", "namedElements")) {
         isTransitive = false
@@ -57,14 +57,14 @@ tasks.processResources {
 tasks.shadowJar {
     exclude("fabric.mod.json")
 
-    configurations = listOf(project.configurations.shadowCommon)
+    configurations = listOf(shadowCommon)
     archiveClassifier.set("dev-shadow")
 }
 
 tasks.remapJar {
     injectAccessWidener.set(true)
     inputFile.set(tasks.shadowJar.get().archiveFile)
-    dependsOn(shadowJar)
+    dependsOn(tasks.shadowJar)
     archiveClassifier.set(null as String?)
 }
 
