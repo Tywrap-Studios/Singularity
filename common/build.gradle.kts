@@ -3,8 +3,6 @@ dependencies {
     
     modApi("dev.architectury:architectury:${rootProject.property("architectury_version")}")
     modApi("me.shedaniel.cloth:cloth-config:${rootProject.property("cloth_version")}")
-
-    implementation("com.google.code.gson:gson:2.10.1")
 }
 
 loom {

@@ -58,7 +58,8 @@ tasks.shadowJar {
     exclude("fabric.mod.json")
 
     configurations = listOf(shadowCommon)
-    archiveClassifier.set("dev-shadow")
+    archiveClassifier.set("all")
+    archiveVersion.set("${project.version}+forge-${rootProject.property("minecraft_version")}")
 }
 
 tasks.remapJar {
@@ -69,7 +70,7 @@ tasks.remapJar {
 }
 
 tasks.jar {
-    archiveClassifier.set("dev")
+    archiveVersion.set("${project.version}+forge-${rootProject.property("minecraft_version")}")
 }
 
 tasks.sourcesJar {

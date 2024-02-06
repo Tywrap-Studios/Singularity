@@ -28,6 +28,7 @@ allprojects {
     apply(plugin = "maven-publish")
 
     base.archivesName.set(rootProject.property("archives_base_name").toString())
+    
     version = rootProject.property("mod_version").toString()
     group = rootProject.property("maven_group").toString()
 
