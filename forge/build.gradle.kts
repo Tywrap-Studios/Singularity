@@ -44,7 +44,7 @@ dependencies {
     }
 }
 
-processResources {
+tasks.processResources {
     inputs.property("version", project.version)
 
     filesMatching("META-INF/mods.toml") {
@@ -76,12 +76,6 @@ tasks.sourcesJar {
     val commonSources = project(":common").tasks.getByName<Jar>("sourcesJar")
     dependsOn(commonSources)
     from(commonSources.archiveFile.map { zipTree(it) })
-}
-
-components.getByName("java") {
-    this.withVariantsFromConfiguration(project.configurations["shadowRuntimeElements"]) {
-        skip()
-    }
 }
 
 publishing {
