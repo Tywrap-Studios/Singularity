@@ -34,3 +34,8 @@ to find these and fix them.
 - [x] Implement item removal timer
 - [x] Implement singularity detection
 - [x] MORE CONFIGURATION!!
+
+## References
+
+Dependencies for this mod include [Cloth Config](https://modrinth.com/mod/cloth-config)
+and [Architectury API](https://modrinth.com/mod/architectury-api).

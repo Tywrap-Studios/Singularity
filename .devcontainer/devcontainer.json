@@ -1,0 +1,13 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/graalvm-asdf:2": {},
+		"ghcr.io/devcontainers-contrib/features/gradle-sdkman:2": {},
+		"ghcr.io/devcontainers-contrib/features/groovy-sdkman:2": {},
+		"ghcr.io/devcontainers-contrib/features/kotlin-sdkman:2": {},
+		"ghcr.io/devcontainers-contrib/features/maven-sdkman:2": {},
+		"ghcr.io/devcontainers-contrib/features/pnpm:2": {},
+		"ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {},
+		"ghcr.io/ebaskoro/devcontainer-features/sdkman:1": {}
+	}
+}
