@@ -27,26 +27,26 @@ public class Clear {
             }
         }
 
-        Util.chat(server, Component.translatable("singularity.chat.clearingItems.done"), false);
-        Util.chat(server, Component.translatable("singularity.chat.clearingItems.count", cleared), !Singularity.CONFIG.clearOptions.showCleared);
-
         List<GlobalPos> detected = Detect.detectSingularities(server, positions);
 
-        for (GlobalPos p : detected) {
-            for (GlobalPos pos : positions) {
-                if (Detector.isInRange(p, pos, Singularity.CONFIG.generalOptions.singularityRadius)) {
-                    for (Entity entity : Objects.requireNonNull(server.getLevel(pos.dimension())).getAllEntities()) {
-                        if (entity instanceof ItemEntity) {
-                            cleared += ((ItemEntity) entity).getItem().getCount();
+        for (Entity entity : Objects.requireNonNull(server.getLevel(pos.dimension())).getAllEntities()) {
+            if (entity instanceof ItemEntity) {
+                for (GlobalPos p : detected) {
+                    if (Detector.isInRange(p, GlobalPos.of(entity.getLevel().dimension(), entity.blockPosition()),
+                            Singularity.CONFIG.generalOptions.singularityRadius)) {
+                        cleared += ((ItemEntity) entity).getItem().getCount();
 
-                            if (entity.blockPosition() == pos.pos()) {
-                                entity.kill();
-                            }
+                        if (entity.blockPosition() == pos.pos()) {
+                            entity.kill();
                         }
                     }
                 }
             }
         }
+
+        Util.chat(server, Component.translatable("singularity.chat.clearingItems.done"), false);
+        Util.chat(server, Component.translatable("singularity.chat.clearingItems.count", cleared),
+                !Singularity.CONFIG.clearOptions.showCleared);
 
         Dumps.create(server.getServerDirectory().toPath(), positions);
     }

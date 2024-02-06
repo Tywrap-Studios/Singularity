@@ -78,7 +78,7 @@ components.getByName("java") {
 publishing {
     publications {
         create<MavenPublication>("mavenFabric") {
-            artifactId = rootProject.property("archives_base_name") + "-" + project.name
+            artifactId = rootProject.property("archives_base_name").toString() + "-" + project.name
             from(components["java"])
         }
     }

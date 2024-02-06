@@ -8,5 +8,13 @@
 		"ghcr.io/devcontainers-contrib/features/maven-sdkman:2": {},
 		"ghcr.io/devcontainers-contrib/features/pnpm:2": {},
 		"ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {},
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vscjava.vscode-gradle",
+				"vscjava.vscode-java-pack"
+			]
+		}
 	}
 }
