@@ -8,7 +8,7 @@ A small mod to find item singularities.
 
 ## Features
 
-- [x] Automatic scheduled item removal
+- [x] Automatic scheduled item removal (configurable)
 - [x] Farm leak detection
 - [x] Fully configurable
 - [x] Warns before clearing items
