@@ -7,6 +7,7 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.ItemEntity;
+import redstonedev.singularity.util.ChatUtil;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -29,7 +30,7 @@ public class Detector {
     }
 
     public static List<ItemEntity> detectSingularities(MinecraftServer server) {
-        Util.chat(server, Component.translatable("singularity.chat.detection.start"),
+        ChatUtil.chat(server, Component.translatable("singularity.chat.detection.start"),
                 false);
 
         Map<GlobalPos, List<ItemEntity>> map = new HashMap<>();
@@ -88,7 +89,7 @@ public class Detector {
                 Component z = Component.literal(Integer.toString(entry.getKey().pos().getZ()))
                         .withStyle(ChatFormatting.AQUA);
 
-                Util.chat(server, Component.translatable("singularity.chat.detection.find", x, y, z, items),
+                ChatUtil.chat(server, Component.translatable("singularity.chat.detection.find", x, y, z, items),
                         Singularity.CONFIG.generalOptions.displayPotentialsPublicly);
 
                 for (ItemEntity val : entry.getValue()) {
@@ -97,7 +98,7 @@ public class Detector {
             }
         }
 
-        Util.chat(server, Component.translatable("singularity.chat.detection.end"),
+        ChatUtil.chat(server, Component.translatable("singularity.chat.detection.end"),
                 false);
 
         return entities;

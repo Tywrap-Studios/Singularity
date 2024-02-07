@@ -1,10 +1,10 @@
-package redstonedev.singularity;
+package redstonedev.singularity.util;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 
-public class Util {
+public class ChatUtil {
     public static void chat(MinecraftServer server, Component msg, boolean operatorOnly) {
         server.sendSystemMessage(msg);
 

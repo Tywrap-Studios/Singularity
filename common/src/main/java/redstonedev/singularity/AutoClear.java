@@ -2,6 +2,8 @@ package redstonedev.singularity;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.MinecraftServer;
+import redstonedev.singularity.commands.Clear;
+import redstonedev.singularity.util.ChatUtil;
 
 public class AutoClear {
     @SuppressWarnings("CallToPrintStackTrace")
@@ -16,13 +18,13 @@ public class AutoClear {
                     }
 
                     Thread.sleep((Singularity.CONFIG.clearOptions.clearInterval - 30) * 1000L);
-                    Util.chat(server, Component.translatable("singularity.chat.clearingItems.30"), false);
+                    ChatUtil.chat(server, Component.translatable("singularity.chat.clearingItems.30"), false);
 
                     Thread.sleep(20 * 1000L);
-                    Util.chat(server, Component.translatable("singularity.chat.clearingItems.10"), false);
+                    ChatUtil.chat(server, Component.translatable("singularity.chat.clearingItems.10"), false);
 
                     Thread.sleep(10 * 1000L);
-                    Util.chat(server, Component.translatable("singularity.chat.clearingItems"), false);
+                    ChatUtil.chat(server, Component.translatable("singularity.chat.clearingItems"), false);
 
                     Clear.clearItems(server);
                 }

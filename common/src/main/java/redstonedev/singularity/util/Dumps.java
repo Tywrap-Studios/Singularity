@@ -1,6 +1,7 @@
-package redstonedev.singularity;
+package redstonedev.singularity.util;
 
 import net.minecraft.core.GlobalPos;
+import redstonedev.singularity.Singularity;
 
 import java.io.BufferedWriter;
 import java.io.File;

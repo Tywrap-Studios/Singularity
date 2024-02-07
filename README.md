@@ -16,6 +16,7 @@ A small mod to find item singularities.
 - [x] Minimal dependencies
 - [x] Runs on a separate thread
 - [x] Very well optimized
+- [x] 100% server-side
 
 ## Why?
 
@@ -38,6 +39,8 @@ to find these and fix them.
 - [x] Implement item removal timer
 - [x] Implement singularity detection
 - [x] MORE CONFIGURATION!!
+- [x] Render language keys on the server-side
+- [x] Better detection algorithm
 
 ## References
 

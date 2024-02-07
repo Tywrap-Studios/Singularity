@@ -1,4 +1,4 @@
-package redstonedev.singularity;
+package redstonedev.singularity.commands;
 
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
@@ -16,6 +16,7 @@ import net.minecraft.commands.arguments.item.ItemInput;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import redstonedev.singularity.Detector;
 
 public class Commands {
         public static void register(CommandDispatcher<CommandSourceStack> dispatcher, CommandBuildContext access,
