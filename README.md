@@ -2,6 +2,10 @@
 
 A small mod to find item singularities.
 
+[![CurseForge latest version](https://img.shields.io/curseforge/v/968634?style=for-the-badge&logo=curseforge&label=CurseForge&color=blue)](https://www.curseforge.com/minecraft/mc-mods/singularity-detector)
+[![Modrinth latest version](https://img.shields.io/modrinth/v/singularity?style=for-the-badge&logo=modrinth&label=Modrinth&color=blue
+)](https://modrinth.com/mod/singularity)
+
 ## Features
 
 - [x] Automatic scheduled item removal
@@ -36,6 +40,11 @@ to find these and fix them.
 - [x] MORE CONFIGURATION!!
 
 ## References
+
+This project includes modified portions of:
+
+- [Server Translations API](https://github.com/NucleoidMC/Server-Translations) ([MIT License](./licenses/server-translations-api.txt)) 
+- [Fabric API](https://github.com/FabricMC/fabric) ([Apache 2.0 License](./licenses/fabric-api.txt))
 
 Dependencies for this mod include [Cloth Config](https://modrinth.com/mod/cloth-config)
 and [Architectury API](https://modrinth.com/mod/architectury-api).

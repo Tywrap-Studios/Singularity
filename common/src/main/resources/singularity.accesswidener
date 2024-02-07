@@ -1,1 +1,4 @@
 accessWidener v2 named
+
+accessible class net/minecraft/server/packs/resources/FallbackResourceManager$SinglePackResourceThunkSupplier
+accessible method net/minecraft/server/packs/resources/FallbackResourceManager$SinglePackResourceThunkSupplier <init> (Lnet/minecraft/server/packs/resources/FallbackResourceManager;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/server/packs/PackResources;)V

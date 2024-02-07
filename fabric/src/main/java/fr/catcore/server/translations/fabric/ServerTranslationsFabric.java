@@ -1,39 +1,39 @@
-package redstonedev.singularity.fabric;
+package fr.catcore.server.translations.fabric;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
 
-import fr.catcore.server.translations.fabric.ServerTranslationsFabric;
+import fr.catcore.server.translations.ServerTranslationsInitializer;
+import fr.catcore.server.translations.api.ServerTranslations;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.resource.IdentifiableResourceReloadListener;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.util.profiling.ProfilerFiller;
-import redstonedev.singularity.Singularity;
 
-public class SingularityFabric implements IdentifiableResourceReloadListener, ModInitializer {
-    private static final ServerTranslationsFabric inner = new ServerTranslationsFabric();
+public class ServerTranslationsFabric implements IdentifiableResourceReloadListener, ModInitializer {
+    public static final ServerTranslations INSTANCE = ServerTranslations.INSTANCE;
 
     @Override
     public void onInitialize() {
-        Singularity.init();
-        inner.onInitialize();
+        INSTANCE.onInitialize();
+        ServerTranslationsInitializer.init();
     }
 
     @Override
     public String getName() {
-        return inner.getName();
+        return INSTANCE.getName();
     }
 
     @Override
     public ResourceLocation getFabricId() {
-        return inner.getFabricId();
+        return INSTANCE.getFabricId();
     }
 
     @Override
     public CompletableFuture<Void> reload(PreparationBarrier synchronizer, ResourceManager manager,
             ProfilerFiller prepareProfiler, ProfilerFiller applyProfiler, Executor prepareExecutor,
             Executor applyExecutor) {
-        return inner.reload(synchronizer, manager, prepareProfiler, applyProfiler, prepareExecutor, applyExecutor);
+        return INSTANCE.reload(synchronizer, manager, prepareProfiler, applyProfiler, prepareExecutor, applyExecutor);
     }
 }

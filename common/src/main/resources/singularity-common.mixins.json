@@ -1,11 +1,40 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "redstonedev.singularity.mixin",
+  "package": "mixins",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "polyfill.NamespaceResourceManagerAccessor",
+
+    "packettweaker.PacketDecoderMixin",
+    "packettweaker.PacketEncoderMixin",
+    "packettweaker.PacketListenerMixin",
+    "packettweaker.ServerGamePacketListenerImplMixin",
+    "packettweaker.ServerNetworkIoAcceptorMixin",
+
+    "translations.MixinAdvancementManager",
+    "translations.MixinDedicatedServer",
+    "translations.MixinMinecraftServer",
+    "translations.MixinRecipeManager",
+    "translations.MixinReloadableResourceManager",
+    "translations.MixinWorldGenerationProgressLogger",
+    
+    "translationsapi.LanguageMixin",
+    "translationsapi.ServerGamePacketListenerImplMixin",
+    "translationsapi.ServerPlayerMixin",
+    "translationsapi.packet.BlockEntityUpdateS2CPacketMixin",
+    "translationsapi.packet.ChatPreviewS2CPacketMixin",
+    "translationsapi.packet.FriendlyByteBufMixin",
+    "translationsapi.packet.SignedMessageMixin",
+    "translationsapi.packet.TextSerializerMixin",
+    "translationsapi.text.HoverEventMixin",
+    "translationsapi.text.MutableTextMixin",
+    "translationsapi.text.TranslatableTextContentMixin"
   ],
   "client": [
+    "translationsapi.client.LanguageMixin",
+    "translationsapi.client.MutableTextMixin",
+    "translationsapi.client.TranslatableTextContentMixin"
   ],
   "injectors": {
     "defaultRequire": 1
