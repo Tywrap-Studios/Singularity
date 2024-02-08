@@ -5,13 +5,13 @@
     "text.autoconfig.singularity.option.generalOptions.singularityRadius": "Singularity Radius",
     "text.autoconfig.singularity.option.generalOptions.minimumSize": "Minimum Singularity Size",
     "text.autoconfig.singularity.option.generalOptions.displayPotentialsPublicly": "Publicly display potential singularities",
+    "text.autoconfig.singularity.option.generalOptions.deleteOldDumps": "Delete old singularity dumps",
     "text.autoconfig.singularity.option.generalOptions.displayDebugSpawns": "Publicly display debug item spawns",
 
     "text.autoconfig.singularity.option.clearOptions": "Item Clearing",
     "text.autoconfig.singularity.option.clearOptions.enableClearing": "Enable",
     "text.autoconfig.singularity.option.clearOptions.showCleared": "Publicly display the amount of cleared items",
     "text.autoconfig.singularity.option.clearOptions.clearInterval": "Time in seconds between clears",
-    "text.autoconfig.singularity.option.clearOptions.minimumItems": "Minimum items to clear",
 
     "singularity.chat.clearingItems.30": "§a[Singularity]§r Clearing ground items in 30 seconds...",
     "singularity.chat.clearingItems.10": "§a[Singularity]§r Clearing ground items in 10 seconds...",

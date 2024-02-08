@@ -79,7 +79,7 @@ public class Detector {
                 items += e.getItem().getCount();
             }
 
-            if (items >= Singularity.CONFIG.clearOptions.minimumItems) {
+            if (items >= Singularity.CONFIG.generalOptions.minimumSize) {
                 Component x = Component.literal(Integer.toString(entry.getKey().pos().getX()))
                         .withStyle(ChatFormatting.AQUA);
 
