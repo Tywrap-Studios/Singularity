@@ -22,7 +22,7 @@ public class MutableTextMixin {
     @Unique
     private Language stapi_cachedLanguageVanilla;
 
-    @Redirect(method = "getVisualOrderText", at = @At(value = "FIELD", target = "Lnet/minecraft/network/chat/MutableComponent;language:Lnet/minecraft/locale/Language;", opcode = Opcodes.GETFIELD))
+    @Redirect(method = "getVisualOrderText", at = @At(value = "FIELD", target = "Lnet/minecraft/network/chat/MutableComponent;decomposedWith:Lnet/minecraft/locale/Language;", opcode = Opcodes.GETFIELD))
     private Language markAsAlwaysTrue(MutableComponent mutableText) {
         return null;
     }
