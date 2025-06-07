@@ -1,38 +1,40 @@
-modLoader = "javafml"
-loaderVersion = "[4,)"
-#issueTrackerURL = ""
-license = "Insert License Here"
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+issueTrackerURL="https://github.com/RedstoneWizard08/Equivalence-Reborn/issues"
 
 [[mods]]
-modId = "example_mod"
-version = "${version}"
-displayName = "Example Mod"
-authors = "Me!"
-description = '''
-This is an example description! Tell everyone what your mod is about!
+modId="singularity"
+version="${version}"
+displayName="Singularity"
+#updateJSONURL="http://myurl.me/"
+#displayURL="http://example.com/"
+logoFile="icon.png"
+#credits="Thanks for this example mod goes to Java"
+authors="RedstoneWizard08, Bogdanasaurus"
+#displayTest="MATCH_VERSION"
+
+description='''
+
 '''
-#logoFile = ""
 
-[[dependencies.example_mod]]
-modId = "neoforge"
-type = "required"
-versionRange = "[21.1,)"
-ordering = "NONE"
-side = "BOTH"
+[[dependencies.singularity]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="BOTH"
 
-[[dependencies.example_mod]]
-modId = "minecraft"
-type = "required"
-versionRange = "[1.21.1,)"
-ordering = "NONE"
-side = "BOTH"
+[[dependencies.singularity]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,)"
+ordering="NONE"
+side="BOTH"
 
-[[dependencies.example_mod]]
-modId = "architectury"
-type = "required"
-versionRange = "[13.0.8,)"
-ordering = "AFTER"
-side = "BOTH"
-
-[[mixins]]
-config = "example_mod.mixins.json"
+[[dependencies.singularity]]
+modId="cloth_config"
+type="required"
+versionRange="[8.2,)"
+ordering="NONE"
+side="BOTH"

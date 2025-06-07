@@ -41,7 +41,7 @@ repositories {
 dependencies {
     neoForge ("net.neoforged:neoforge:${rootProject.property("neoforge_version")}")
 
-    modApi("dev.architectury:architectury-forge:${rootProject.property("architectury_version")}")
+    modApi("dev.architectury:architectury-neoforge:${rootProject.property("architectury_version")}")
     modApi("me.shedaniel.cloth:cloth-config-forge:${rootProject.property("cloth_version")}")
 
     common(project(":common", "namedElements")) {
