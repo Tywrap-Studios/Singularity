@@ -21,7 +21,7 @@ public class Detector {
         for (ServerLevel level : server.getAllLevels()) {
             for (Entity entity : level.getAllEntities()) {
                 if (entity instanceof ItemEntity) {
-                    positions.add(GlobalPos.of(entity.getLevel().dimension(), entity.blockPosition()));
+                    positions.add(GlobalPos.of(entity.level().dimension(), entity.blockPosition()));
                 }
             }
         }
@@ -44,7 +44,7 @@ public class Detector {
                     continue;
 
                 if (entity instanceof ItemEntity) {
-                    GlobalPos pos = GlobalPos.of(entity.getLevel().dimension(), entity.blockPosition());
+                    GlobalPos pos = GlobalPos.of(entity.level().dimension(), entity.blockPosition());
                     List<ItemEntity> tmp = new ArrayList<>();
 
                     tmp.add((ItemEntity) entity);
@@ -54,7 +54,7 @@ public class Detector {
 
                     for (Entity e : entities) {
                         if (e instanceof ItemEntity) {
-                            GlobalPos epos = GlobalPos.of(e.getLevel().dimension(), e.blockPosition());
+                            GlobalPos epos = GlobalPos.of(e.level().dimension(), e.blockPosition());
 
                             if (isInRange(pos, epos,
                                     Singularity.CONFIG.generalOptions.singularityRadius)) {

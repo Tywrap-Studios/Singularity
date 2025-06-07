@@ -25,6 +25,6 @@ public class Clear {
         ChatUtil.chat(server, Component.translatable("singularity.chat.clearingItems.count", cleared),
                 !Singularity.CONFIG.clearOptions.showCleared);
 
-        Dumps.create(server.getServerDirectory().toPath(), positions);
+        Dumps.create(server.getServerDirectory(), positions);
     }
 }
